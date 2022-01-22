@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte1: #F8EFF4;
+    --fonte2: #A40865;
+    --fonte3: #405170;
+    --fonte4: #CEA4B2;
+    --fonte5: #97A0B4;
+    --fonte6: #C2866B;
+}
+body{
+    background-color: var(--fonte1);
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+main{
+    background-color: white;
+    width: 200px;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(22, 22, 22, 0.055);
+}
+
+main > p {
+    padding: 15px;
+    color: black;
+
+}
+
+h1{
+    font-size: 16px;
+    color: var(--fonte3);
+
+}
+p.box {
+    background-color: var(--fonte1);
+    display: inline-block;
+    margin: 15px;
+    border-radius: 7px;
+    padding: 10px;
+    
+}
+
+section.user{
+    max-width: 100vw;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section input#txtuser{
+    border-color: rgba(0, 0, 0, 0.068);
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section#chek p{
+    display: inline-block;
+}
+input::placeholder{
+    font-size: 13px;
+}
+
+input#txtterm{
+    display: inline;
+}
+
+input.btn{
+    background-color: var(--fonte2);
+    color: var(--fonte1);
+    font-size: 10px;
+    margin: 10px 0px 10px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+a{
+    color: var(--fonte2);
+
+}
+
