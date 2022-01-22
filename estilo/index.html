@@ -8,24 +8,34 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <main>
-        <picture>
-
-        </picture>
-        <p>Tina V.invited you to join</p>
-        <h1>Tetelkasz</h1>
-        <p class="box">46k Active users * 78k Total users</p>
-        <section class="user">
-            <p id="userp">Username</p>
-            <input type="text" name="user" id="txtuser" placeholder="Seu usuario">
-        </section>
-        <section id="chek">
-            <input type="checkbox" name="term" id="txtterm">
-            <p>I have read and agree to the <a href="#">Terms of service</a> and privacy policy</p>
-            <input class="btn" type="button" value="Continue">
-        </section>
-        <p><a href="#">Already have on account</a></p>
-    </main>
-
+    
+    <form id="login">
+        <p class="entrar">Login</p>
+        <div> 
+            <input type="text" name="user" id="txtuser" class="caixa" placeholder="Usuario">
+        </div>
+        <div>
+            <input type="password" name="senha" id="txtsenha" class="caixa" placeholder="Senha">
+        </div>
+        <div>
+            <input type="button" value="LOGIN" class="btn">
+        </div>
+        <P>Não esta registrado? <a href="#" id="signbtn">Crie uma conta </a></P>
+    </form>
+    <form id="sign" class="sign ">
+        <p class="entrar">Sign</p>
+        <div>
+            <input type="text" name="user" id="txtuser" class="caixa" placeholder="Nome de usuario">
+        </div>
+        <div>
+            <input type="password" name="senha" id="txtsenha" class="caixa" placeholder="Criar nova Senha">
+        </div>
+        <div>
+            <input type="password" name="senha" id="txtsenha" class="caixa" placeholder="Confirmar Senha">
+        </div>
+        <div>
+            <input type="button" value="SIGN-UP" class="btn">
+        </div>
+    </form>
 </body>
 </html>

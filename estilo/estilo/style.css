@@ -6,88 +6,117 @@
 }
 
 :root{
-    --fonte1: #F8EFF4;
-    --fonte2: #A40865;
-    --fonte3: #405170;
-    --fonte4: #CEA4B2;
-    --fonte5: #97A0B4;
-    --fonte6: #C2866B;
+    --fonte1: #7fbe64c4;
+    --fonte2: #52ca60e7;
+    --fonte3: #98CF9F;
+    --fonte4: #4ab657;
 }
+
 body{
     background-color: var(--fonte1);
-    padding-top: 100px;
+    margin: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-}
-main{
-    background-color: white;
-    width: 200px;
-    margin: auto;
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(22, 22, 22, 0.055);
-}
-
-main > p {
-    padding: 15px;
-    color: black;
-
-}
-
-h1{
-    font-size: 16px;
-    color: var(--fonte3);
-
-}
-p.box {
-    background-color: var(--fonte1);
-    display: inline-block;
-    margin: 15px;
-    border-radius: 7px;
-    padding: 10px;
     
 }
 
-section.user{
-    max-width: 100vw;
-    text-align: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-section input#txtuser{
-    border-color: rgba(0, 0, 0, 0.068);
-    margin-top: 5px;
-    font-size: 16px;
+.entrar{
+    color: #4AB657;
+    background-color: white;
+    text-align: center;
     padding: 10px;
-    border-radius: 5px;
+    font-style: 10px;
+    width: 55px;
+    position: relative;
+    top: -60px;
+    left: -30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-section#chek p{
-    display: inline-block;
+form#login{
+    background-color: white;
+    margin: auto;
+    
+    box-shadow: 1px 2px 3px rgba(8, 8, 8, 0.26);
+    text-align: center;
+    padding: 30px;
+    width: 50vh;
+    border-radius: 10px;
+}
+
+form#login > div{
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
+
+div > p {
+    text-align: left;
+}
+
+.caixa{
+    background-color: #d3d3d348;
+    border: none;
+    padding: 15px;
+    width: 260px;
+    border-radius: 5px;
 }
 input::placeholder{
-    font-size: 13px;
+    color: #949494ec;
 }
 
-input#txtterm{
-    display: inline;
-}
-
-input.btn{
-    background-color: var(--fonte2);
-    color: var(--fonte1);
-    font-size: 10px;
-    margin: 10px 0px 10px 0px;
+input.btn {
+    border: none;
     padding: 15px;
+    width: 290px;
+    color: white;
+    background-color: var(--fonte2);
     border-radius: 5px;
     cursor: pointer;
-    border: none;
+}
+
+.btn:hover {
+    background-color: var(--fonte4);
+}
+
+p{
+    color: rgba(128, 128, 128, 0.486);
 }
 
 a{
-    color: var(--fonte2);
-
+    text-decoration: none;
+    color: var(--fonte3);
 }
+a:hover{
+    text-decoration: underline;
+}
+
+form#sign a:hover{
+    display: flex;
+}
+
+form#sign{
+
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgba(8, 8, 8, 0.26);
+    text-align: center;
+    padding: 30px;
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    top: 470px;
+    left: 168px;
+}
+
+form#sign > div {
+    padding: 10px;
+}
+
+form#sign > p.entrar{
+    left: 44px;
+}
+
+
+
 
