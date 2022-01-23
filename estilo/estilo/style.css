@@ -33,7 +33,7 @@ body{
     border-top-right-radius: 10px;
 }
 
-form#login{
+#formlogin{
     background-color: white;
     margin: auto;
     
@@ -44,7 +44,7 @@ form#login{
     border-radius: 10px;
 }
 
-form#login > div{
+#formlogin > div{
     padding: 10px;
     position: relative;
     top: -30px;
@@ -91,12 +91,7 @@ a:hover{
     text-decoration: underline;
 }
 
-form#sign a:hover{
-    display: flex;
-}
-
-form#sign{
-
+#formsign{
     position: absolute;
     background-color: white;
     box-shadow: 1px 2px 3px rgba(8, 8, 8, 0.26);
@@ -106,10 +101,10 @@ form#sign{
     height: auto;
     border-radius: 10px;
     top: 470px;
-    left: 168px;
+    left: 160px;
 }
 
-form#sign > div {
+#formsign > div {
     padding: 10px;
 }
 
@@ -117,6 +112,6 @@ form#sign > p.entrar{
     left: 44px;
 }
 
-
-
-
+form.active{
+    color: black;
+}
