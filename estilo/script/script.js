@@ -18,6 +18,16 @@ function logar(){
 }
 
 
+let novouser = document.getElementById('txtnovouser')
+let novasenha = document.getElementById('txtnovasenha')
+let confirmsenha = document.getElementById('txtconfirmsenha')
 
 
-
+function cadastrar(){
+  if(novouser.value.length == 0 || novasenha.value.length == 0 || confirmsenha.value.length == 0){
+    erro.innerHTML = 'Preencha todos os campos para continuar'
+  } else{
+    erro.innerHTML = 'Cadastrado(a) com sucesso!'
+    window.location = 'index.html'
+  }
+}
