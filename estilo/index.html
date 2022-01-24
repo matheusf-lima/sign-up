@@ -6,24 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <script src="script/script.js"></script>
+    
 </head>
 <body>
     
     <form id="formlogin">
         <p class="entrar">Login</p>
-        <div> 
-            <input type="text" name="user" id="txtuser" class="caixa" placeholder="Usuario">
+        <div>
+            <p id="txterro"></p> 
+            <input id="txtuser" type="text" name="txtuser" class="caixa" placeholder="Usuario">
         </div>
         <div>
-            <input type="password" name="senha" id="txtsenha" class="caixa" placeholder="Senha">
+            <input id="txtsenha" type="password" name="txtsenha"  class="caixa" placeholder="Senha">
         </div>
         <div>
-            <a href="#"><input type="button" value="LOGIN" class="btn" id="btnlogin" onclick="logar()"></a>
+            <input id="btnlogar" type="button" value="LOGIN" class="btn"  onclick="logar()">
         </div>
         <P>Não esta registrado? <a href="#" id="lblsign">Crie uma conta </a></P>
     </form>
     <!--<form id="formsign" class="sign">
+
         <p class="entrar">Sign</p>
         <div>
             <input type="text" name="user" id="txtuser" class="caixa" placeholder="Nome de usuario">
@@ -38,5 +40,6 @@
             <input type="button" value="SIGN-UP" class="btn">
         </div>
     </form> -->
+    <script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>

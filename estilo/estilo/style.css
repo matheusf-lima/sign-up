@@ -13,10 +13,10 @@
 }
 
 body{
-    background-color: var(--fonte1);
+    background-image: linear-gradient(to right bottom, var(--fonte1), #177421e7);
     margin: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    height: 100vh;
 }
 
 .entrar{
@@ -51,7 +51,8 @@ body{
 }
 
 div > p {
-    text-align: left;
+    text-align: center;
+    color: green;
 }
 
 .caixa{
@@ -60,6 +61,7 @@ div > p {
     padding: 15px;
     width: 260px;
     border-radius: 5px;
+    font-size: 16px;
 }
 input::placeholder{
     color: #949494ec;

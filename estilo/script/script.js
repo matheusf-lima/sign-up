@@ -1,16 +1,23 @@
-function logar() {
-    event.preventDefault();
-    var usuario = document.getElementById('txtuser')[0].value;
-    usuario = usuario.toLowerCase();
-    var senha = document.getElementById('txtsenha')[0].value;
-    senha = senha.toLowerCase();
-  
-    if (usuario == "admin" && senha == "admin") {
-      alert("dados corretos");
-      window.location = "home.html";
-    }else{
-      alert("Dados incorretos, tente novamente");
+let user = document.getElementById('txtuser');
+let senha = document.getElementById('txtsenha');
+let erro = document.getElementById('txterro')
+
+function logar(){
+  if(user.value.length == 0 || senha.value.length == 0){
+    erro.innerHTML = 'Preencha todos os campos para continuar'
+  } else if (user.value == 'admin' && senha.value == 'admin'){
+      window.alert("Bem vindo ademiro")
+      erro.innerHTML = ''
+      window.location = 'home.html'
+      return
+    } else {
+      erro.innerHTML = 'Usuario ou senha Invalidos'
     }
-  }
+  
+  
+}
+
+
+
 
 
