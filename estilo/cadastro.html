@@ -13,16 +13,16 @@
         <p class="entrar">Sign</p>
         <div>
             <p id="txterro"></p>
-            <input type="text" name="user" id="txtnovouser" class="caixa" placeholder="Nome de usuario">
+            <input type="text" name="user" id="txtnovouser" class="caixa" placeholder="Nome de usuario" required>
         </div>
         <div>
-            <input type="password" name="senha" id="txtnovasenha" class="caixa" placeholder="Criar nova Senha">
+            <input type="password" name="senha" id="txtnovasenha" class="caixa" placeholder="Criar nova Senha" required>
         </div>
         <div>
-            <input type="password" name="senha" id="txtconfirmsenha" class="caixa" placeholder="Confirmar Senha">
+            <input type="password" name="senha" id="txtconfirmsenha" class="caixa" placeholder="Confirmar Senha" required>
         </div>
         <div>
-            <input type="button" value="SIGN-UP" class="btn" onclick="cadastrar()">
+            <input type="button" value="SIGN-UP" class="btn" onclick="saveClient()">
         </div>
         <P>Ja tem conta? <a href="index.html" id="lblsign">Faça login </a></P>
     </form>
