@@ -8,13 +8,8 @@ let loginform = document.getElementById('formlogin')
 
 function logar(){
   if(loginform.reportValidity()){
-    const consultar = readClient()
-    if(user.value == consultar.nome) {
-      erro.innerHTML = 'achei o boi'
-    }
-  } else [
-    erro.innerHTML = 'fail'
-  ]
+    window.location = 'home.html'
+  }
 }
 // --------------------------------------------------
 
@@ -50,12 +45,6 @@ const saveClient = () => {
 
 
 //crud no localstorage
-
-const tempClient = {
-  nome: "Lucas",
-  senha: "novasenha"
-} 
-
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_usuario')) ?? []
 
 const setLocalStorage = (dbClient) => localStorage.setItem('db_usuario',JSON.stringify(dbClient))
@@ -86,3 +75,49 @@ const deleteClient = (index) => {
   setLocalStorage(dbClient)
 }
 
+const tableuser = document.getElementById('tbody')
+
+const createRow = (client, index) => {
+  const newRow = document.createElement('tr')
+  newRow.innerHTML = 
+    `<td class="colunanome"> ${client.nome}</td>
+     <td> ${client.senha}</td>
+     <td class="colunaacao"class><input class="edit"type="button" value="Edit" id="edit-${index}"> <input type="button" value="Del" class="del" id="del-${index}"></td>`
+  tableuser.appendChild(newRow)
+}
+
+const clearTable = () =>{
+  tableuser.innerHTML = ''
+}
+
+const updateTable = () => {
+  clearTable()
+  const dbClient = readClient()
+  dbClient.forEach(createRow)
+}
+
+updateTable()
+
+const fillFilds = (client) => {
+  novouser.value = client.nome
+  novasenha.value = client.senha
+}
+
+const editClient = (index)=> {
+  const client = readClient()[index]
+  fillFilds(client)
+  window.location = 'cadastro.html'
+
+}
+
+const editDelete  = (event) => {
+  if(event.target.type == 'button'){
+    const [action, index] = event.target.id.split('-')
+    if(action == 'edit'){
+      editClient(index)
+      
+    }
+  }
+}
+
+document.getElementById('table').addEventListener('click', editDelete)
