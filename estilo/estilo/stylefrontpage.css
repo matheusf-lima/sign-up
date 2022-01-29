@@ -6,25 +6,82 @@
 }
 
 :root{
-    --fonte1: #7fbe64c4;
-    --fonte2: #52ca60e7;
-    --fonte3: #98CF9F;
-    --fonte4: #7ea082;
+    --fonte1: #FE5F55;
+    --fonte2: #EEF5DB;
+    --fonte3: #586b6e;
+    --fonte4: #39393A;
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--fonte1), #177421e7);
-    height: 100vh;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--fonte4);
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 header {
-    background-color: green;
-    margin: auto;
-    
+    position: relative;
+    background-color: var(--fonte2);
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.logo {
+    color: black;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--fonte4);
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: var(--fonte3);
+    color: var(--fonte2);
+    transition: 0.5;
+}
+
+@media (max-width: 1200px) {
+    header {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    header {
+        margin: 20px;
+    }
+}
