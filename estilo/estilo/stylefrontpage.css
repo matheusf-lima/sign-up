@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte1: #7fbe64c4;
+    --fonte2: #52ca60e7;
+    --fonte3: #98CF9F;
+    --fonte4: #7ea082;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--fonte1), #177421e7);
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header {
+    background-color: green;
+    margin: auto;
+    
+}
+
