@@ -96,12 +96,27 @@ nav ul li a:hover {
     }
     .menu-toggle::before
     {
-        content: '\f0c9';
-        font-family: fontAwesome;
+        content: '<';
         line-height: 40px;
+    }
+    .menu-toggle.active::before
+    {
+        content: 'X';
     }
     nav
     {
         display: none;
     }
+    nav.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul {
+        display: block;
+    }
+    nav.active ul li a{
+        margin: 0;
+    }
+    
 }

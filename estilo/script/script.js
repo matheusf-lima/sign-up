@@ -120,4 +120,3 @@ const editDelete  = (event) => {
   }
 }
 
-document.getElementById('table').addEventListener('click', editDelete)
