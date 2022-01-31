@@ -7,7 +7,7 @@
 
 :root{
     --fonte1: #FE5F55;
-    --fonte2: #EEF5DB;
+    --fonte2: #edf1e2;
     --fonte3: #586b6e;
     --fonte4: #39393A;
 }
@@ -15,6 +15,9 @@
 body {
     background-color: var(--fonte4);
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../background/pexels-daria-obymaha-1684151.jpg');
+    background-size: cover;
+    background-attachment: flex;
 }
 
 header {
@@ -96,12 +99,13 @@ nav ul li a:hover {
     }
     .menu-toggle::before
     {
-        content: '<';
+        content: '\f0c9';
+        font-family: fontAwesome;
         line-height: 40px;
     }
     .menu-toggle.active::before
     {
-        content: 'X';
+        content: '\58';
     }
     nav
     {
